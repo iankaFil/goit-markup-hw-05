@@ -12,6 +12,7 @@
   --btn-color: #f5f4fa;
   --overlay-color: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -71,7 +72,6 @@ a {
 }
 .header-menu {
   border-bottom: 1px solid var(--header-border);
-  /* padding: 24px 0 25px; */
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -114,7 +114,7 @@ a {
 }
 .nav-item {
   color: var(--text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .nav-item:hover,
 .nav-item:focus {
@@ -125,7 +125,7 @@ a {
   color: var(--sub-text-color);
   display: flex;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .contacts:hover,
 .contacts:focus {
@@ -160,8 +160,7 @@ a {
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .contact-icon:hover,
 .contact-icon:focus {
@@ -220,8 +219,7 @@ a {
   border-color: transparent;
   padding: 10px 30px;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .main-button:hover,
 .main-button:focus {
@@ -330,8 +328,7 @@ a {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .user-message-link:hover,
 .user-message-link:focus {
@@ -352,8 +349,7 @@ a {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -382,7 +378,7 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .address-item:hover,
 .address-item:focus {
@@ -391,7 +387,7 @@ a {
 }
 .address {
   color: var(--white-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .address:hover,
 .address:focus {
@@ -420,8 +416,7 @@ a {
   border-radius: 50%;
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -439,8 +434,7 @@ a {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .button:hover,
 .button:focus {
@@ -464,7 +458,7 @@ a {
 }
 .product-link {
   display: block;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .product-link:hover,
 .product-link:focus {
@@ -508,7 +502,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
@@ -524,7 +518,7 @@ img {
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--animation);
   background: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
@@ -542,7 +536,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation);
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
