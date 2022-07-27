@@ -331,7 +331,7 @@ a {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
-  transition: background-color var(--animation);
+  transition: fill var(--animation), background-color var(--animation);
 }
 .user-message-link:hover,
 .user-message-link:focus {
